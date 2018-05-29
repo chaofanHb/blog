@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Blog</title>
+<link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+<header>
+<h1><%= title %></h1>
+</header>
+
+<nav>
+<span><a title="主页" href="/user">home</a></span>
+<span><a title="发表" href="/post">post</a></span>
+<span><a title="退出" href="/reg">loginout</a></span>
+</nav>
+
+<article>
+<form method="post">
+  标题:<br />
+  <input type="text" name="title" /><br />
+  正文<br />
+  <textarea name="post" rows="20" cols="100"></textarea><br />
+  <input type="submit" value="发表" />
+</form>
+</article>
+</body>
+</html>

@@ -1,0 +1,1 @@
+"build": "cross-env NODE_ENV=production npm install && cross-env NODE_ENV=production webpack --progress --colors",
