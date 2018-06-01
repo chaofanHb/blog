@@ -1,0 +1,29 @@
+/* 搜索 */
+
+@import 'variables.less';
+
+.search-box-container {
+    height: 2rem;
+    background: @light-gray;
+    .search-box {
+        padding: 0.25rem;
+        .search-input {
+            border: 1px solid @box-border;
+            border-radius: @radius;
+            height: 1.4rem;
+            line-height: 1.4rem;
+            input {
+                box-sizing: border-box;
+                border-radius: @radius;
+                border: 0;
+                display: block;
+                width: 100%;
+                line-height: 1rem;
+                padding: 0.2rem 0.25rem;
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+}

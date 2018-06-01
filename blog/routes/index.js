@@ -2,8 +2,8 @@
 //var router = express.Router();
 
 var crypto = require('crypto'),
-    User = require('../models/user.js'),
-	Post = require('../models/post.js');
+    User = require('../../models/blog/user.js'),
+	Post = require('../../models/blog/post.js');
 
 module.exports = function(app) {
   app.get('/', function (req, res) {

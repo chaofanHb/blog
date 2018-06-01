@@ -1,0 +1,61 @@
+/* 成员详细信息 */
+
+@import '../variables.less';
+
+.item-people {
+    line-height: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    .item-avatar {
+        float: left;
+        margin-right: 0.5rem;
+        height: 2rem;
+        width: 2rem;
+        img {
+            border-radius: 50%;
+            height: 2rem;
+            width: 2rem;
+        }
+    }
+    .item-name-detail {
+        float: left;
+        width: 60%;
+        span {
+            display: block;
+            line-height: 1.2rem;
+        }
+        .item-dept {
+            font-size: .65rem;
+            height: 1rem;
+            line-height: .8rem;
+            width: 100%;
+            color: lighten(@font-default, 20%);
+            overflow: hidden;
+            label {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .part {
+                max-width: 45%;
+                overflow: hidden;
+                white-space: nowrap;
+            }
+            .part-long {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .item-friends {
+        float: right;
+        height: 2rem;
+        img {
+            height: 1.15rem;
+            width: 1.15rem;
+            padding: 0.45rem .65rem;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}

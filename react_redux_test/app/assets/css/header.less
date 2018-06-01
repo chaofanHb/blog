@@ -1,0 +1,65 @@
+/* header */
+
+@import 'variables.less';
+
+.header {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: @header-bg;
+
+    .action {
+        padding: 0 10px;
+        height: 40px;
+        display: block;
+    }
+
+    .action-back {
+        
+        label {
+        }
+
+        label:after {
+            content: '';
+            position: absolute;
+            width: 9px;
+            height: 9px;
+            top: 15px;
+            border: 1px solid @font-default;
+            border-top: none;
+            border-right: none;
+         
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+    }
+
+    .header-left {
+        display: inline-block;
+        width: 30%;
+        float: left;
+    }
+
+    .header-center {
+        display: inline-block;
+        width: 40%;
+        text-align: center;
+        float: left;
+    }
+
+    .header-right {
+        display: inline-block;
+        width: 30%;
+        text-align: right;
+        float: left;
+
+        .text-primary {
+            padding-right: 0.5rem;
+            font-size: 0.7rem;
+            display: block;
+        }
+    }
+}

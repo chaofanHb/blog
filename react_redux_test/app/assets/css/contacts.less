@@ -1,0 +1,51 @@
+/* 联系人 */
+
+@import 'variables.less';
+
+.list-contacts-item {
+  .item-title {
+    height: 2rem;
+    line-height: 2rem;
+    .item-avatar {
+      float: left;
+      margin-right: 0.5rem;
+      height: 2rem;
+      width: 2rem;
+      img {
+          border-radius: 50%;
+          height: 2rem;
+          width: 2rem;
+      }
+    }
+
+    .item-name {
+      float: left;
+      width: 70%;
+      display: inline-block;
+      overflow: hidden;
+      height: 2rem;
+    }
+
+    .icon-forward {
+      float: right;
+      padding-right: 0.5rem;
+      padding-top: 0.75rem;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 9px;
+        height: 9px;
+        border: 1px solid @font-default;
+        border-top: none;
+        border-right: none;
+           
+        -webkit-transform: rotate(225deg);
+        -moz-transform: rotate(225deg);
+        -o-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        transform: rotate(225deg);
+      } 
+    }
+  }
+}

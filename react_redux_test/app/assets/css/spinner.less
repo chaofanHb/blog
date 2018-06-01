@@ -1,0 +1,39 @@
+/* 加载 spinner */
+
+@import 'variables.less';
+
+.spinner-mask {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1500;
+  .spinner-box {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    .spinner {
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      
+
+      img {
+        padding: 0.25rem;
+        height: 1.5rem;
+        width: 1.5rem;
+        position: fixed;
+        background-color: @black;
+        border-radius: @radius;
+      }
+    }
+  }
+}
+
+.spinner-hide {
+  display: none;
+}
